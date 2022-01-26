@@ -1,0 +1,14 @@
+[
+  {
+    "name": "auto",
+    "value": "bg-auto"
+  },
+  {
+    "name": "cover",
+    "value": "bg-cover"
+  },{
+    "name": "contain",
+    "value": "bg-contain"
+  }
+  
+]

@@ -1,0 +1,31 @@
+[
+    {
+        "name": "rounded-none",
+        "value": "rounded-none"
+    },
+    {
+        "name": "rounded-sm",
+        "value": "rounded-sm"
+    },{
+        "name": "rounded",
+        "value": "rounded"
+    },{
+        "name": "rounded-md",
+        "value": "rounded-md"
+    },{
+        "name": "rounded-lg",
+        "value": "rounded-lg"
+    },{
+        "name": "rounded-xl",
+        "value": "rounded-xl"
+    },{
+        "name": "rounded-2xl",
+        "value": "rounded-2xl"
+    },{
+        "name": "rounded-3xl",
+        "value": "rounded-3xl"
+    },{
+        "name": "rounded-full",
+        "value": "rounded-full"
+    }
+]

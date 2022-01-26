@@ -1,0 +1,7 @@
+/* .component-selected {
+  @apply relative;
+}
+.component-selected::after {
+  content: " ";
+  @apply absolute top-0 left-0 block w-full h-full  border-red-600 border-2 border-solid pointer-events-none;
+} */

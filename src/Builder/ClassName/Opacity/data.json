@@ -1,0 +1,39 @@
+[
+    {
+        "name": "opacity-0",
+        "value": "opacity-0"
+    },{
+        "name": "opacity-10",
+        "value": "opacity-10"
+    },{
+        "name": "opacity-20",
+        "value": "opacity-20"
+    },{
+        "name": "opacity-25",
+        "value": "opacity-25"
+    },{
+        "name": "opacity-30",
+        "value": "opacity-30"
+    },{
+        "name": "opacity-40",
+        "value": "opacity-40"
+    },{
+        "name": "opacity-50",
+        "value": "opacity-50"
+    },{
+        "name": "opacity-60",
+        "value": "opacity-60"
+    },{
+        "name": "opacity-70",
+        "value": "opacity-70"
+    },{
+        "name": "opacity-80",
+        "value": "opacity-80"
+    },{
+        "name": "opacity-90",
+        "value": "opacity-90"
+    },{
+        "name": "opacity-100",
+        "value": "opacity-100"
+    }
+]

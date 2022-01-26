@@ -1,0 +1,38 @@
+[
+  {
+    "name": "thin",
+    "value": "font-thin"
+  },
+  {
+    "name": "extralight",
+    "value": "font-extralight"
+  },
+  {
+    "name": "light",
+    "value": "font-light"
+  },
+  {
+    "name": "normal",
+    "value": "font-normal"
+  },
+  {
+    "name": "medium",
+    "value": "font-medium"
+  },
+  {
+    "name": "semibold",
+    "value": "font-semibold"
+  },
+  {
+    "name": "bold",
+    "value": "font-bold"
+  },
+  {
+    "name": "extrabold",
+    "value": "font-extrabold"
+  },
+  {
+    "name": "black",
+    "value": "font-black"
+  }
+]

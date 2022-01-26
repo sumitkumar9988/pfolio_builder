@@ -1,0 +1,38 @@
+[
+  {
+    "name": "bottom",
+    "value": "bg-bottom"
+  },
+  {
+    "name": "center",
+    "value": "bg-center"
+  },
+  {
+    "name": "left",
+    "value": "bg-left"
+  },
+  {
+    "name": "leftBottom",
+    "value": "bg-left-bottom"
+  },
+  {
+    "name": "lettTop",
+    "value": "bg-left-top"
+  },
+  {
+    "name": "right",
+    "value": "bg-right"
+  },
+  {
+    "name": "rightBottom",
+    "value": "bg-right-bottom"
+  },
+  {
+    "name": "rightTop",
+    "value": "bg-right-top"
+  },
+  {
+    "name": "top",
+    "value": "bg-top"
+  }
+]

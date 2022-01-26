@@ -1,0 +1,42 @@
+[
+  {
+    "name": "shadow-sm",
+    "value": "shadow-sm"
+  },
+  {
+    "name": "shadow",
+    "value": "shadow"
+  },
+  {
+    "name": "shadow-md",
+    "value": "shadow-md"
+  },
+  {
+    "name": "shadow-lg",
+    "value": "shadow-lg"
+  },
+  {
+    "name": "shadow-xl",
+    "value": "shadow-xl"
+  },
+  {
+    "name": "shadow-2xl",
+    "value": "shadow-2xl"
+  },
+  {
+    "name": "shadow-none",
+    "value": "shadow-none"
+  },
+  {
+    "name": "",
+    "value": ""
+  },
+  {
+    "name": "",
+    "value": ""
+  },
+  {
+    "name": "",
+    "value": ""
+  }
+]
