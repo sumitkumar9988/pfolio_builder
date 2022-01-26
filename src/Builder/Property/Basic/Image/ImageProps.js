@@ -1,5 +1,5 @@
 import React from "react";
-import AddImage from "./Props/Uploader/Index.js";
+// import AddImage from "./Props/Uploader/Index.js";
 import Recentimage from "./Props/RecentImage/Index.js";
 const Image = ({setProp,property}) => {
   return (
