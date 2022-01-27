@@ -4,6 +4,14 @@ const { Title } = Typography;
 
 const imageList = [
   {
+    image:"background img i",
+    src:"https://res.cloudinary.com/sumit9988/image/upload/v1642765087/04.-Hopbush_lh3rjv.jpg"
+  },
+  {
+    image:"background img 2",
+    src:"https://res.cloudinary.com/sumit9988/image/upload/v1642765087/04.-Hopbush_lh3rjv.jpg"
+  },
+  {
     image: "Image 1",
     src: "https://images.unsplash.com/photo-1641495053705-cf075ef15811?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
   },
@@ -21,7 +29,7 @@ const imageList = [
   },
 ];
 
-const RecentImage = ({ setProp,property }) => {
+const RecentImage = ({ setProp,name }) => {
   return (
     <div className="pt-6 overflow-y-scroll">
       <Space direction="vertical">
@@ -36,7 +44,8 @@ const RecentImage = ({ setProp,property }) => {
                   width={200}
                   preview={false}
                   onClick={(e) => {
-                    setProp((prop) => (prop.image = image.src));
+                    console.log(image.src)
+                    setProp((props) => (props[`${name}`] = image.src));
                   }}
                   src={image.src}
                 />

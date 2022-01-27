@@ -3,7 +3,7 @@ import {  Button, Image,Drawer } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 import { UploadOutlined } from '@ant-design/icons';
 import ImageProps from "./ImageProps";
-const Index = ({value}) => {
+const Index = ({value,setProp,name}) => {
   const [ImageDrawer, setimageDrawer] = useState(false);
   const onOpenSidebar = (e) => {
     e.preventDefault();
@@ -60,7 +60,7 @@ const Index = ({value}) => {
         onClose={onCloseSidebar}
         visible={ImageDrawer}
       >
-          <ImageProps  value={value}/>
+          <ImageProps  value={value} name={name} setProp={setProp}/>
       </Drawer>
     </div>
    

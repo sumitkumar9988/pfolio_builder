@@ -2,7 +2,9 @@ import React from "react";
 import { Form } from "antd";
 import BackgroundColor from "./Color/Index";
 import BackgroundImage from './Image/Index';
+import BackgroundOpacity from './BgOpacity/Index';
 ;
+
 
 const Index = ({ setProp ,props}) => {
   return (
@@ -20,6 +22,13 @@ const Index = ({ setProp ,props}) => {
         tooltip="Add Background Image or Import"
       >
         <BackgroundImage props={props} setProp={setProp}/>
+      </Form.Item>
+      <Form.Item
+       label="Background Color Opacity"
+       size="large"
+       tooltip="Set the background color opacity"
+      >
+        <BackgroundOpacity props={props} setProp={setProp}/>
       </Form.Item>
     </div>
   );

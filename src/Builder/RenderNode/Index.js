@@ -160,7 +160,7 @@ const RenderNode = ({ render }) => {
   return (
     // isHover || isActive on hover and Active on click
     <>
-      {isActive
+      {(isActive)
         ? ReactDOM.createPortal(
             <div
               ref={currentRef}
@@ -171,9 +171,11 @@ const RenderNode = ({ render }) => {
                 zIndex: 30,
               }}
             >
-              <Button size="medium" type="primary" onClick={onOpenSettingDrawer}>
-                Edit component
-              </Button>
+             { selected.name !== "Block" ? (
+               <Button size="medium" type="primary" onClick={onOpenSettingDrawer}>
+               Edit component
+             </Button>
+             ):""} 
               {id !== ROOT_NODE && (
                 <div>
                   {" "}

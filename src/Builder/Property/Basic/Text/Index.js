@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Tabs, Button, Form, Input, Drawer } from "antd";
 import StylePropList from "./Style";
-const Index = ({ setProp, name, value }) => {
+const Index = ({ setProp, name, props, propsName, value }) => {
   const [textStyleSidebar, setTextStyleSidebar] = useState(false);
   const onOpenSidebar = (e) => {
     e.preventDefault();
@@ -14,7 +14,7 @@ const Index = ({ setProp, name, value }) => {
   return (
     <div>
       <Form.Item
-        label="Edit subtittle"
+        label={`Edit ${name}`}
         size="large"
         tooltip="Change subheading Title of selected Item"
       >
@@ -40,7 +40,12 @@ const Index = ({ setProp, name, value }) => {
         visible={textStyleSidebar}
       >
         <Form layout="vertical">
-          <StylePropList setProp={setProp} name={name} value={value}/>
+          <StylePropList
+            setProp={setProp}
+            propsName={propsName}
+            name={name}
+            props={props}
+          />
         </Form>
       </Drawer>
     </div>

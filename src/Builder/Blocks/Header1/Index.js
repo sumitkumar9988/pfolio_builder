@@ -5,6 +5,7 @@ import ContentEditable from "react-contenteditable";
 
 const defaultProps = {
   backgroundColor: "bg-[#ECF2FB]",
+  backgroundOpacity:"bg-opacity-0",
   backgroundImage:"https://res.cloudinary.com/sumit9988/image/upload/v1642765087/76.-Rice-Flower_1_zdrdoc.jpg",
   title: "Emilia Clarke",
   fontFamily: "Arial",
@@ -13,7 +14,27 @@ const defaultProps = {
   image:
     "https://res.cloudinary.com/sumit9988/image/upload/v1642728661/pexels-spring-toan-4075524_1_hfdz4h.png",
   alt: "image",
-  fontFamily: "Arial",
+
+  // Title Props
+  titleColor:"#2C2C2C",
+  titleItalic:"",
+  titleUnderline:"",
+  titleTransform:"normal-case",
+  titleFontFamily:"Arial",
+  titleFontWeight:"font-bold",
+  titleLetterSpacing:"",
+
+  // Subtitle Props
+
+  subTitleColor:"#2C2C2C",
+  subTitleItalic:"",
+  subTitleUnderline:"",
+  subTitleTransform:"normal-case",
+  subTitleFontFamily:"Arial",
+  subTitleFontWeight:"font-bold",
+  subTitleLetterSpacing:"",
+
+
 };
 
 const Index = (props) => {
@@ -30,6 +51,21 @@ const Index = (props) => {
     image,
     alt,
     fontFamily,
+    backgroundOpacity,
+    titleColor,
+    titleItalic,
+    titleUnderline,
+    titleTransform,
+    titleFontFamily,
+    titleFontWeight,
+    titleLetterSpacing,
+    subTitleColor,
+    subTitleItalic,
+    subTitleUnderline,
+    subTitleTransform,
+    subTitleFontFamily,
+    subTitleFontWeight,
+    subTitleLetterSpacing,
   } = props;
   const backgroundColorName = `bg-[${backgroundColor}]`;
   const {
@@ -40,6 +76,16 @@ const Index = (props) => {
     enabled: state.options.enabled,
   }));
 
+  // Text Property
+  // Color
+  // Italic
+  // Underline
+  // Transform
+  // FontFamily
+  // FontWeight
+  // LetterSpacing
+
+
   return (
     <div
       ref={connect}
@@ -47,7 +93,7 @@ const Index = (props) => {
         backgroundImage: backgroundImage ? "url(" + backgroundImage + ")" : "",
       }}
     >
-      <div className={`overflow-x-hidden ${backgroundColorName} bg-opacity-10  h-screen`}>
+      <div className={`overflow-x-hidden ${backgroundColorName} ${backgroundOpacity}  h-screen`}>
         <div className="flex flex-col md:flex-row  h-screen justify-center items-center ">
           <div className="w-full md:w-1/2  flex justify-center items-center">
             <div className="mt-10 sm:mt-96 md:mt-0 h-full flex lg:h-96 px-4 justify-center items-center md:items-start flex-col md:px-6 xl:px-20">
@@ -57,8 +103,8 @@ const Index = (props) => {
                 onChange={(e) => {
                   setProp((prop) => (prop.title = e.target.value), 500);
                 }}
-                style={{ fontFamily: fontFamily }}
-                className="text-2xl sm:text-5xl text-center md:text-left font-bold  text-[#2C2C2C]"
+                style={{ fontFamily: titleFontFamily }}
+                className={`text-2xl sm:text-5xl text-center md:text-left  text-[${titleColor}] ${titleItalic} ${titleUnderline} ${titleTransform} ${titleFontWeight} ${titleLetterSpacing}`}
               />
 
               <ContentEditable
@@ -67,7 +113,8 @@ const Index = (props) => {
                 onChange={(e) => {
                   setProp((prop) => (prop.subtitle = e.target.value), 500);
                 }}
-                className="text-center md:text-left  text-base leading-normal text-[#5A5959]"
+                style={{ fontFamily: subTitleFontFamily }}
+                className={`text-center md:text-left  text-base leading-normal text-[${subTitleColor}] ${subTitleItalic} ${subTitleUnderline} ${subTitleTransform} ${subTitleFontWeight} ${subTitleLetterSpacing}`}
               />
             </div>
           </div>
