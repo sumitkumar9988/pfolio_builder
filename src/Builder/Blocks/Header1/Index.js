@@ -50,7 +50,6 @@ const Index = (props) => {
     subtitle,
     image,
     alt,
-    fontFamily,
     backgroundOpacity,
     titleColor,
     titleItalic,

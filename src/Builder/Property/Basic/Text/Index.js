@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tabs, Button, Form, Input, Drawer } from "antd";
+import { Button, Form, Input, Drawer } from "antd";
 import StylePropList from "./Style";
 const Index = ({ setProp, name, props, propsName, value }) => {
   const [textStyleSidebar, setTextStyleSidebar] = useState(false);
