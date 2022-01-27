@@ -58,14 +58,14 @@ const Bar = ({ collapsed }) => {
                     <ImageAntd src={Image3} width={300} />
                     <Divider />
                   </div>
-                  <div ref={(ref) => create(ref, <Sample4 />)}>
+                  {/* <div ref={(ref) => create(ref, <Sample4 />)}>
                     <ImageAntd src={Image4} width={300} />
                     <Divider />
                   </div>
                   <div ref={(ref) => create(ref, <Header1 />)}>
                     <ImageAntd src={Image5} width={300} />
                     <Divider />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

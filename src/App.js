@@ -1,6 +1,6 @@
 import React from 'react'
 import RouterConfig from './RouterConfig'
-import './App.less';
+// import './App.less';
  const App = () => {
   return (
     <div>
