@@ -172,7 +172,7 @@ const RenderNode = ({ render }) => {
               }}
             >
              { selected.name !== "Block" ? (
-               <Button size="medium" type="primary" onClick={onOpenSettingDrawer}>
+               <Button size="medium" type="primary" style={{background:"#8B5CF6",borderColor: "#8B5CF6"}} onClick={onOpenSettingDrawer}>
                Edit component
              </Button>
              ):""} 
@@ -183,6 +183,7 @@ const RenderNode = ({ render }) => {
                     <Button
                       size="medium"
                       type="primary"
+                      style={{background:"#8B5CF6",borderColor: "#8B5CF6"}}
                       onClick={() => {
                         actions.selectNode(parent);
                       }}
@@ -193,13 +194,14 @@ const RenderNode = ({ render }) => {
               )}
               {moveable && (
                 <Tooltip title="Move Components">
-                  <Button size="medium" type="primary" ref={drag} icon={<DragOutlined />} />
+                  <Button size="medium" style={{background:"#8B5CF6",borderColor: "#8B5CF6"}} type="primary" ref={drag} icon={<DragOutlined />} />
                 </Tooltip>
               )}
               {selected && selected.name === "Container" ? (
                 <Tooltip title="Copy Components">
                   <Button
                     size="medium"
+                    style={{background:"#8B5CF6",borderColor: "#8B5CF6"}}
                     type="primary"
                     onClick={(e) => {
                       duplicateNode(selected.id);
@@ -213,6 +215,7 @@ const RenderNode = ({ render }) => {
                   <Button
                     size="medium"
                     type="primary"
+                    style={{background:"#8B5CF6",borderColor: "#8B5CF6"}}
                     onMouseDown={(e) => {
                       e.stopPropagation();
                       actions.delete(id);

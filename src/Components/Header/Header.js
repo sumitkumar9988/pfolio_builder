@@ -49,6 +49,7 @@ const Index = ({ exportCode, setOpenCodedrawer, setPreviewWidth }) => {
                     <Tooltip title="Undo" placement="top">
                       <Button
                         icon={<DoubleLeftOutlined />}
+                        style={{background:"#fff",borderColor: "#8B5CF6"}}
                         onClick={() => actions.history.undo()}
                       />
                     </Tooltip>
@@ -57,6 +58,7 @@ const Index = ({ exportCode, setOpenCodedrawer, setPreviewWidth }) => {
                     <Tooltip title="Redo" placement="top">
                       <Button
                         icon={<DoubleRightOutlined />}
+                        style={{background:"#fff",borderColor: "#8B5CF6"}}
                         onClick={() => actions.history.redo()}
                       />
                     </Tooltip>
@@ -67,6 +69,7 @@ const Index = ({ exportCode, setOpenCodedrawer, setPreviewWidth }) => {
                     <Tooltip title="View" placement="top">
                       <Button
                         icon={<EyeOutlined />}
+                        style={{background:"#fff",borderColor: "#8B5CF6"}}
                         onClick={() => {
                           exportCode();
                           actions.setOptions(
@@ -78,7 +81,7 @@ const Index = ({ exportCode, setOpenCodedrawer, setPreviewWidth }) => {
                   </div>
                   <div>
                     <Tooltip title="Export Code" placement="top">
-                      <Button onClick={showCode} icon={<CodeOutlined />} />
+                      <Button onClick={showCode} style={{background:"#fff",borderColor: "#8B5CF6"}} icon={<CodeOutlined />} />
                     </Tooltip>
                   </div>
                 </div>
@@ -88,7 +91,7 @@ const Index = ({ exportCode, setOpenCodedrawer, setPreviewWidth }) => {
                 <div>
                   <Tooltip title="Laptop view" placement="top">
                     <Button
-                      onClick={() => setPreviewWidth("w-full")}
+                      onClick={() => setPreviewWidth("w-full")} style={{background:"#fff",borderColor: "#8B5CF6"}}
                       icon={<LaptopOutlined />}
                     />
                   </Tooltip>
@@ -97,6 +100,7 @@ const Index = ({ exportCode, setOpenCodedrawer, setPreviewWidth }) => {
                   <Tooltip title="Tablet view" placement="top">
                     <Button
                       onClick={() => setPreviewWidth("w-[900px]")}
+                      style={{background:"#fff",borderColor: "#8B5CF6"}}
                       icon={<TabletOutlined />}
                     />
                   </Tooltip>
@@ -105,6 +109,7 @@ const Index = ({ exportCode, setOpenCodedrawer, setPreviewWidth }) => {
                   <Tooltip title="Mobile view" placement="top">
                     <Button
                       onClick={() => setPreviewWidth("w-[450px]")}
+                      style={{background:"#fff",borderColor: "#8B5CF6"}}
                       icon={<MobileOutlined />}
                     />
                   </Tooltip>
@@ -115,14 +120,15 @@ const Index = ({ exportCode, setOpenCodedrawer, setPreviewWidth }) => {
 
           {enabled ? (
             <div className="flex flex-row items-center justify-center gap-2">
-              <Button>Save</Button>
-              <Button type="primary">Publish</Button>
+              <Button style={{background:"#fff",borderColor: "#8B5CF6"}}>Save</Button>
+              <Button style={{background:"#8B5CF6",borderColor: "#8B5CF6"}} type="primary">Publish</Button>
             </div>
           ) : (
             <div>
               <Button
                 type="primary"
                 icon={<CheckOutlined />}
+                style={{background:"#8B5CF6",borderColor: "#8B5CF6"}}
                 onClick={() => {
                   actions.setOptions((options) => (options.enabled = !enabled));
                 }}
